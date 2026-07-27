@@ -143,7 +143,17 @@ export default function SignupPage() {
               </svg>
               Google
             </Button>
-            <Button variant="outline" className="w-full">
+            <Button
+              variant="outline"
+              className="w-full"
+              onClick={() =>
+                window.open(
+                  "https://github.com/bilalshah7511-prog",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }
+            >
               <Github className="h-4 w-4" />
               GitHub
             </Button>

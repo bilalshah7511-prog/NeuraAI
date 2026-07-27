@@ -102,6 +102,14 @@ npx vercel
 
 Or connect your GitHub repository to [Vercel](https://vercel.com) for automatic deployments.
 
+## Author
+
+Built by [Muhammad Bilal Shah](https://github.com/bilalshah7511-prog) — Frontend Developer specializing in React & Next.js.
+
+- GitHub: [bilalshah7511-prog](https://github.com/bilalshah7511-prog)
+- Portfolio: [bilal-sattar-portfolio.vercel.app](https://bilal-sattar-portfolio.vercel.app)
+- LinkedIn: [muhammad-bilal-shah](https://www.linkedin.com/in/muhammad-bilal-shah-30950b405)
+
 ## License
 
 MIT
