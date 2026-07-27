@@ -1,0 +1,4 @@
+// Legacy pages directory placeholder for project structure compatibility.
+// All routes are handled via the Next.js App Router in /app.
+
+export {};
