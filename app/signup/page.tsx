@@ -7,6 +7,7 @@ import { Sparkles, Mail, Lock, User, Github } from "lucide-react";
 import Button from "@/components/ui/Button";
 import Input from "@/components/ui/Input";
 import ThemeToggle from "@/components/ui/ThemeToggle";
+import AuthSidePanel from "@/components/auth/AuthSidePanel";
 import { useToastContext } from "@/components/providers/ToastProvider";
 
 export default function SignupPage() {
@@ -37,42 +38,19 @@ export default function SignupPage() {
 
   return (
     <div className="flex min-h-screen">
-      <div className="hidden flex-1 flex-col justify-between bg-gradient-to-br from-brand-600 to-brand-900 p-12 lg:flex">
-        <Link href="/" className="flex items-center gap-2">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/20">
-            <Sparkles className="h-6 w-6 text-white" />
-          </div>
-          <span className="font-display text-2xl font-bold text-white">
-            NeuraAI
-          </span>
-        </Link>
-        <div>
-          <h2 className="font-display text-4xl font-bold text-white">
-            Start creating today
-          </h2>
-          <p className="mt-4 text-lg text-brand-100">
-            Join 10,000+ creators who use NeuraAI to produce better content in
-            less time.
-          </p>
-          <ul className="mt-8 space-y-3 text-brand-100">
-            {[
-              "50 free AI generations",
-              "No credit card required",
-              "Access to all basic templates",
-            ].map((item) => (
-              <li key={item} className="flex items-center gap-2 text-sm">
-                <div className="h-1.5 w-1.5 rounded-full bg-brand-300" />
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-        <p className="text-sm text-brand-200">
-          &copy; {new Date().getFullYear()} NeuraAI. All rights reserved.
-        </p>
-      </div>
+      <AuthSidePanel
+        title="Start creating today"
+        description="Join 10,000+ creators who use NeuraAI to produce better content in less time."
+        features={[
+          "50 free AI generations",
+          "No credit card required",
+          "Access to all basic templates",
+        ]}
+        quote="The best investment I've made for my content business. NeuraAI pays for itself in the first week."
+        author="James C., Freelance Writer"
+      />
 
-      <div className="flex flex-1 flex-col justify-center px-6 py-12 lg:px-16">
+      <div className="relative flex flex-1 flex-col justify-center px-6 py-12 lg:px-16">
         <div className="absolute right-4 top-4">
           <ThemeToggle />
         </div>

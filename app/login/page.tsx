@@ -7,6 +7,7 @@ import { Sparkles, Mail, Lock, Github } from "lucide-react";
 import Button from "@/components/ui/Button";
 import Input from "@/components/ui/Input";
 import ThemeToggle from "@/components/ui/ThemeToggle";
+import AuthSidePanel from "@/components/auth/AuthSidePanel";
 import { useToastContext } from "@/components/providers/ToastProvider";
 
 export default function LoginPage() {
@@ -26,29 +27,14 @@ export default function LoginPage() {
 
   return (
     <div className="flex min-h-screen">
-      <div className="hidden flex-1 flex-col justify-between bg-gradient-to-br from-brand-600 to-brand-900 p-12 lg:flex">
-        <Link href="/" className="flex items-center gap-2">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/20">
-            <Sparkles className="h-6 w-6 text-white" />
-          </div>
-          <span className="font-display text-2xl font-bold text-white">
-            NeuraAI
-          </span>
-        </Link>
-        <div>
-          <h2 className="font-display text-4xl font-bold text-white">
-            Welcome back
-          </h2>
-          <p className="mt-4 text-lg text-brand-100">
-            Sign in to continue creating amazing content with AI.
-          </p>
-        </div>
-        <p className="text-sm text-brand-200">
-          &copy; {new Date().getFullYear()} NeuraAI. All rights reserved.
-        </p>
-      </div>
+      <AuthSidePanel
+        title="Welcome back"
+        description="Sign in to continue creating amazing content with AI."
+        quote="NeuraAI has completely changed my workflow. I create 10x more content in half the time."
+        author="Sarah M., Marketing Manager"
+      />
 
-      <div className="flex flex-1 flex-col justify-center px-6 py-12 lg:px-16">
+      <div className="relative flex flex-1 flex-col justify-center px-6 py-12 lg:px-16">
         <div className="absolute right-4 top-4">
           <ThemeToggle />
         </div>
